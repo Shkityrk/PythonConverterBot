@@ -4,25 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ab14ae4-c9c7-4c26-8b30-40e2909957fa" name="Changes" comment="gitignore added">
-      <change afterPath="$PROJECT_DIR$/src/bot/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bot/controllers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bot/controllers/commands/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bot/resources/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bot/resources/buttons/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bot/resources/templates/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bot/root/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bot/root/exceptions/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bot/root/middlewares/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bot/root/root_router.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/python_converter/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/throttling_service/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/throttling_service/redis_repository.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/throttling_service/redis_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app_config/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app_config/config.py" afterDir="false" />
-    </list>
+    <list default="true" id="2ab14ae4-c9c7-4c26-8b30-40e2909957fa" name="Changes" comment="gitignore added" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,6 +55,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Дима\PycharmProjects\PythonConverterBot\src\redis\services" />
       <recent name="C:\Users\Дима\PycharmProjects\PythonConverterBot\Docker" />
       <recent name="C:\Users\Дима\PycharmProjects\PythonConverterBot" />
     </key>
@@ -95,7 +78,7 @@
       <workItem from="1716653514182" duration="327000" />
       <workItem from="1716653983971" duration="1676000" />
       <workItem from="1716658128797" duration="3417000" />
-      <workItem from="1716671853742" duration="4191000" />
+      <workItem from="1716671853742" duration="4719000" />
     </task>
     <task id="LOCAL-00001" summary="gitignore added">
       <option name="closed" value="true" />
