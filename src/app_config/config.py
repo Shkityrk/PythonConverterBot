@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from src.bot.config.env import StrEnv
+from src.app_config.env import StrEnv
 
 __all__ = [
     "BOT_TOKEN",

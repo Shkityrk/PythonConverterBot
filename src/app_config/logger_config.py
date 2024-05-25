@@ -1,6 +1,6 @@
 from loguru import logger
 
-from src.bot.config.config import LOGGING_PATH
+from src.app_config.config import LOGGING_PATH
 
 __all__ = [
     "configurate_logger",

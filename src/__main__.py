@@ -1,6 +1,6 @@
 import asyncio
 
-from src.bot.config import configurate_logger
+from src.app_config import configurate_logger
 
 
 async def main() -> None:
