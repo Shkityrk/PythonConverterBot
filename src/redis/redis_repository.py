@@ -1,7 +1,7 @@
 from loguru import logger
 import redis.asyncio as redis
 
-from src.app_config.config import REDIS_HOST, REDIS_PORT
+from src.common.config import REDIS_HOST, REDIS_PORT
 
 __all__ = [
     "RedisRepository"
