@@ -1,15 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="2ab14ae4-c9c7-4c26-8b30-40e2909957fa" name="Changes" comment="gitignore added">
-      <change afterPath="$PROJECT_DIR$/Docker/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Docker/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/__main__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bot/config/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bot/config/env.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bot/config/logger_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docker/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docker/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dockerfile" />
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -36,14 +52,22 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/pythonproj/headmanbot",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.Mappings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Дима\PycharmProjects\PythonConverterBot\Docker" />
+      <recent name="C:\Users\Дима\PycharmProjects\PythonConverterBot" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -60,7 +84,7 @@
       <option name="presentableId" value="Default" />
       <updated>1716653513232</updated>
       <workItem from="1716653514182" duration="327000" />
-      <workItem from="1716653983971" duration="346000" />
+      <workItem from="1716653983971" duration="1676000" />
     </task>
     <task id="LOCAL-00001" summary="gitignore added">
       <option name="closed" value="true" />
