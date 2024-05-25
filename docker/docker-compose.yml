@@ -3,10 +3,10 @@ version: '3.9'
 services:
   python_converter_bot:
     env_file:
-      - /.env
+      - ../.env
     build:
-      dockerfile: Dockerfile
-      context: ./
+      dockerfile: docker/Dockerfile
+      context: ../
     volumes:
       - /var/logs/python_converter_bot:/app/logs
     depends_on:
@@ -16,4 +16,4 @@ services:
     image: redis:7.2.3
     restart: on-failure
     ports:
-      - 6379:6379
+      - "6379:6379"
