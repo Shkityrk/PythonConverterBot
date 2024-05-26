@@ -5,20 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2ab14ae4-c9c7-4c26-8b30-40e2909957fa" name="Changes" comment="gitignore added">
-      <change afterPath="$PROJECT_DIR$/src/bot/root_router.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/exceptions/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/exceptions/root_router_parent_error.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bot/controllers/commands/start.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bot/controllers/commands/void.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bot/enums/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bot/enums/commands.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bot/resources/templates/info_messages.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/__main__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app_config/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/config/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app_config/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/config/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app_config/env.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/config/env.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app_config/logger_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/config/logger_config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bot/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/bot/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bot/root/exceptions/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/bot/bot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bot/controllers/commands/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/bot/controllers/commands/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bot/resources/templates/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/bot/resources/templates/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bot/resources/templates/ask_messages.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/bot/controllers/commands/photo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bot/root/middlewares/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/bot/root/middlewares/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bot/root/middlewares/catch_exception_middleware.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/bot/root/middlewares/catch_exception_middleware.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bot/root/middlewares/check_time_out_middleware.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/bot/root/middlewares/check_time_out_middleware.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bot/root/middlewares/set_throttling_middleware.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/bot/root/middlewares/set_throttling_middleware.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bot/root/root_router.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/bot/root/root_router.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redis/redis_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/redis/redis_repository.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bot/root_router.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/bot/root_router.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +96,8 @@
       <workItem from="1716653514182" duration="327000" />
       <workItem from="1716653983971" duration="1676000" />
       <workItem from="1716658128797" duration="3417000" />
-      <workItem from="1716671853742" duration="6461000" />
+      <workItem from="1716671853742" duration="7044000" />
+      <workItem from="1716712442059" duration="3414000" />
     </task>
     <task id="LOCAL-00001" summary="gitignore added">
       <option name="closed" value="true" />

@@ -10,7 +10,7 @@ __all__ = [
     "dispatcher"
 ]
 
-bot = Bot(BOT_TOKEN, parse_mode=ParseMode.HTML)  # Initializing the Bot (I guess it's Singleton)
+bot = Bot(BOT_TOKEN, parse_mode=ParseMode.HTML)  # Initializing the Bot
 
 dispatcher = Dispatcher(storage=MemoryStorage())  # Although storage is not used now I hope I'll use it later
 dispatcher.include_router(build_root_router())  # Including root router to dispatcher
