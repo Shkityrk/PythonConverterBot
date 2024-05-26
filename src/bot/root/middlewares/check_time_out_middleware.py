@@ -12,6 +12,7 @@ __all__ = [
 
 
 class CheckTimeoutMiddleware(BaseMiddleware):
+    """Middleware that checks that user can send a photo to be converted to code"""
     async def __call__(
             self,
             handler: Callable[[Message, dict[str, Any]], Awaitable[Any]],

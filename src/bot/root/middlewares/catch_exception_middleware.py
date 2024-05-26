@@ -14,6 +14,7 @@ __all__ = [
 
 
 class CatchExceptionMiddleware(BaseMiddleware):
+    """Middleware that catches exceptions and logs them to the log file"""
     async def __call__(
         self,
         handler: HandlerType,

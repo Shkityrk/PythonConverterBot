@@ -19,6 +19,7 @@ class ThrottlingService:
                 await repository.set_key(KeyBases.THROTTLING_KEY + user_id, int(Constraints.THROTTLING_TIME), 1)
                 return False
 
+            # NEED TO PARSE CONSTRAINT TO INT IDK WHY ENUMS WORKS SO BADLY
             if messages_count > int(Constraints.MESSAGES_LIMIT): return True
             await repository.increment_key(KeyBases.THROTTLING_KEY + user_id)
             return False

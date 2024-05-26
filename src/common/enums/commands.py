@@ -7,4 +7,5 @@ __all__ = [
 
 @unique
 class TelegramCommand(StrEnum):
+    """Telegram commands for filters to handlers"""
     START_COMMAND = "start"

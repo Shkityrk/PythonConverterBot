@@ -17,6 +17,7 @@ __all__ = [
 
 
 class SetThrottlingMiddleware(BaseMiddleware):
+    """Middleware to throttle events from noisy users"""
     async def __call__(
         self,
         handler: HandlerType,
