@@ -25,12 +25,11 @@ class SetThrottlingMiddleware(BaseMiddleware):
     ) -> Any:
         user_id = str(event.from_user.id)
 
-        if get_flag(data, "void_command"):
-            logger.info("VOID COMMAND NOT THROTTLED")
-            return
+        if get_flag(data, "void_command"): return
 
         throttling_service = ThrottlingService()
-
-        #  Logic of throttling...
+        if await throttling_service.need_to_throttle(user_id):
+            logger.info(f"MESSAGE FROM USER WITH ID {user_id} && USERNAME {event.from_user.username} WAS THROTTLED")
+            return
 
         return await handler(event, data)

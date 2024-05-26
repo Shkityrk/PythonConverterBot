@@ -3,7 +3,7 @@ from aiogram.types import Message
 from aiogram.filters import Command
 
 from src.bot.root import RootRouter
-from src.bot.enums import TelegramCommand
+from src.common.enums import TelegramCommand
 from src.bot.resources.templates import START_COMMAND_TEMPLATE
 
 
