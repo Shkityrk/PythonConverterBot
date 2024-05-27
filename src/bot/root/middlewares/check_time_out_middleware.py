@@ -5,6 +5,7 @@ from aiogram import BaseMiddleware
 from aiogram.types import Message
 
 from src.redis.services import TimeOutService
+from src.bot.resources.templates import YOU_TIMED_OUT
 
 __all__ = [
     "CheckTimeoutMiddleware"
@@ -22,7 +23,10 @@ class CheckTimeoutMiddleware(BaseMiddleware):
         user_id = str(event.from_user.id)
 
         time_out_service = TimeOutService()
-
-        #  Logic of checking time-out
+        if await time_out_service.is_timed_out(user_id):
+            logger.info(f"REQUEST TO CONVERT FROM USER WITH ID {user_id} && USERNAME {event.from_user.username} "
+                        f"IS TIMED OUT")
+            await event.answer(YOU_TIMED_OUT)
+            return
 
         return await handler(event, data)

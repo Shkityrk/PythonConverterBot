@@ -16,7 +16,7 @@ class ThrottlingService:
         async with self._repository as repository:
             messages_count = await repository.get_by_key(KeyBases.THROTTLING_KEY + user_id)
             if messages_count is None:
-                await repository.set_key(KeyBases.THROTTLING_KEY + user_id, int(Constraints.THROTTLING_TIME), 1)
+                await repository.set_key(KeyBases.THROTTLING_KEY + user_id, int(Constraints.THROTTLING_TIME))
                 return False
 
             # NEED TO PARSE CONSTRAINT TO INT IDK WHY ENUMS WORKS SO BADLY

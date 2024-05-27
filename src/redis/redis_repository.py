@@ -23,7 +23,7 @@ class RedisRepository:
         await self._con.aclose()
 
     #  Sets a key with a value with expire time
-    async def set_key(self, key: str, time: int, value: int) -> None:
+    async def set_key(self, key: str, time: int, value: int = 1) -> None:
         await self._con.setex(name=key, time=time, value=value)
 
     async def get_by_key(self, key: str) -> int | None:
