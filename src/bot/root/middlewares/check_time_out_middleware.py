@@ -21,8 +21,9 @@ class CheckTimeoutMiddleware(BaseMiddleware):
             data: dict[str, Any]
     ) -> Any:
         user_id = str(event.from_user.id)
+        redis_con = data["redis_con"]
 
-        time_out_service = TimeOutService()
+        time_out_service = TimeOutService(redis_con)
         if await time_out_service.is_timed_out(user_id):
             logger.info(f"REQUEST TO CONVERT FROM USER WITH ID {user_id} && USERNAME {event.from_user.username} "
                         f"IS TIMED OUT")

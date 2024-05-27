@@ -1,3 +1,5 @@
+import redis.asyncio as redis
+
 from src.redis.redis_repository import RedisRepository
 from src.common.enums import KeyBases, Constraints
 
@@ -9,8 +11,8 @@ __all__ = [
 class TimeOutService:
     _repository: RedisRepository
 
-    def __init__(self) -> None:
-        self._repository = RedisRepository()
+    def __init__(self, redis_con: redis.Redis) -> None:
+        self._repository = RedisRepository(redis_con)
 
     async def is_timed_out(self, user_id: str) -> bool:
         async with self._repository as repository:

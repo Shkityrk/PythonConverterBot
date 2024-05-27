@@ -25,10 +25,11 @@ class SetThrottlingMiddleware(BaseMiddleware):
         data: dict[str, Any],
     ) -> Any:
         user_id = str(event.from_user.id)
+        redis_con = data["redis_con"]
 
         if get_flag(data, "void_command"): return
 
-        throttling_service = ThrottlingService()
+        throttling_service = ThrottlingService(redis_con)
         if await throttling_service.need_to_throttle(user_id):
             logger.info(f"MESSAGE FROM USER WITH ID {user_id} && USERNAME {event.from_user.username} WAS THROTTLED")
             return

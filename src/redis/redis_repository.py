@@ -1,6 +1,5 @@
 import redis.asyncio as redis
 
-from src.common.config import REDIS_HOST, REDIS_PORT
 
 __all__ = [
     "RedisRepository"
@@ -10,13 +9,10 @@ __all__ = [
 class RedisRepository:
     _con: redis.Redis
 
-    async def __aenter__(self) -> "RedisRepository":
-        self._con = redis.Redis(
-            port=REDIS_PORT,
-            host=REDIS_HOST,
-            decode_responses=True
-        )
+    def __init__(self, redis_con: redis.Redis) -> None:
+        self._con = redis_con
 
+    async def __aenter__(self) -> "RedisRepository":
         return self
 
     async def __aexit__(self, exc_type, *_) -> None:
