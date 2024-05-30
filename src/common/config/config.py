@@ -9,6 +9,7 @@ __all__ = [
     "CHECK_TIME_OUT",
     "REDIS_HOST",
     "REDIS_PORT",
+    "TESSERACT_PATH"
 ]
 
 
@@ -20,4 +21,6 @@ CHECK_TIME_OUT: bool = BoolEnv("CHECK_TIME_OUT")
 
 REDIS_HOST: str = StrEnv("REDIS_HOST")
 REDIS_PORT: int = IntEnv("REDIS_PORT")
+
+TESSERACT_PATH: str = StrEnv("TESSERACT_PATH")
 

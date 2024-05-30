@@ -4,7 +4,8 @@ from .config import (
     THROTTLING,
     CHECK_TIME_OUT,
     REDIS_HOST,
-    REDIS_PORT
+    REDIS_PORT,
+    TESSERACT_PATH
 )
 from .logger_config import configurate_logger
 
@@ -15,5 +16,6 @@ __all__ = [
     "THROTTLING",
     "CHECK_TIME_OUT",
     "REDIS_HOST",
-    "REDIS_PORT"
+    "REDIS_PORT",
+    "TESSERACT_PATH"
 ]

@@ -4,9 +4,11 @@ WORKDIR /app
 
 COPY requirements.txt /app
 
-RUN apt-get update \
-  && apt-get -y install tesseract-ocr \
-  && apt-get -y install ffmpeg libsm6 libxext6
+RUN apt-get update && apt-get install -y \
+    tesseract-ocr \
+    libtesseract-dev \
+    libleptonica-dev \
+    && rm -rf /var/lib/apt/lists/*
 
 RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt

@@ -30,6 +30,5 @@ class InjectRedisConnectionMiddleware(BaseMiddleware):
             decode_responses=True
         )
 
-        logger.debug(f"Injecting redis")
         data["redis_con"] = con
         return await handler(event, data)

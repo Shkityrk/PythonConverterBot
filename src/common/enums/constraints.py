@@ -10,4 +10,5 @@ class Constraints(IntEnum):
     """Some necessary constraints for services"""
     THROTTLING_TIME = 60
     MESSAGES_LIMIT = 5
-    TIME_OUT_TIME = 600
+    TIME_OUT_TIME = 1
+    #  TODO: SET TIME_OUT_TIME TO 600
