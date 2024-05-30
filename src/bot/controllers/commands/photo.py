@@ -1,8 +1,9 @@
+from pathlib import Path
+from io import BytesIO
+
 from aiogram import Router, F
 from aiogram.types import Message
-from io import BytesIO
 from PIL import Image
-from loguru import logger
 
 from src.bot.root import RootRouter
 from src.common.config import CHECK_TIME_OUT
@@ -24,17 +25,14 @@ def include_photo_router(root_router: RootRouter) -> None:
     root_router.include_router(photo_router)
 
 
-@photo_router.message(F.photo)
+@photo_router.message(F.document)
 async def photo_python_handler(message: Message) -> None:
-    bytes_image = BytesIO()
-    photo_path = (await bot.get_file(message.photo[0].file_id)).file_path
-    await bot.download_file(photo_path, bytes_image)
+    photo_path = (await bot.get_file(message.document.file_id)).file_path
+    await bot.download_file(photo_path, "media/photo.png")
 
-    image = Image.open(bytes_image)
+    image = Image.open("media/photo.png")
 
     python_from_image_converter = PythonFromImageConverter(image)
     converted_python_text = python_from_image_converter.convert_image_to_python()
 
-    logger.info(converted_python_text)
-
-    #await message.answer(converted_python_text)
+    await message.answer("<b>Текст, распознанный нейросетью:</b>\n\n"+converted_python_text)
