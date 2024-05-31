@@ -9,7 +9,7 @@ services:
       context: ../
     volumes:
       - /var/logs/python_converter_bot:/app/logs
-      - YOUR_DIRECTORY:/app/media
+      - YOUR_PATH:/app/media
     depends_on:
       - redis
 
