@@ -9,7 +9,7 @@ services:
       context: ../
     volumes:
       - /var/logs/python_converter_bot:/app/logs
-      - C:\Users\dima-\OneDrive\Документы\media:/app/media
+      - /var/media/python_converter_bot:/app/media
     depends_on:
       - redis
 

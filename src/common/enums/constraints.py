@@ -6,7 +6,6 @@ __all__ = [
 ]
 
 
-@unique
 class Constraints(IntEnum):
     """Some necessary constraints for services"""
     THROTTLING_TIME = 60
