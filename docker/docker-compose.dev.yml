@@ -3,7 +3,7 @@ version: '3.9'
 services:
   python_converter_bot:
     env_file:
-      - ../.env/.env
+      - ../.env/.dev.env
     build:
       dockerfile: docker/Dockerfile
       context: ../

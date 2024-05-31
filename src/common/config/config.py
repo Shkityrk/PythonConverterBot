@@ -3,6 +3,7 @@ from pathlib import Path
 from src.common.config.env import StrEnv, IntEnv, BoolEnv
 
 __all__ = [
+    "DEBUG",
     "BOT_TOKEN",
     "LOGGING_PATH",
     "THROTTLING",
@@ -12,6 +13,8 @@ __all__ = [
     "TESSERACT_PATH"
 ]
 
+
+DEBUG: bool = BoolEnv("DEBUG")
 
 BOT_TOKEN: str = StrEnv("BOT_TOKEN")
 LOGGING_PATH: Path = Path(StrEnv("LOGGING_PATH"))

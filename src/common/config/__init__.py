@@ -1,4 +1,5 @@
 from .config import (
+    DEBUG,
     BOT_TOKEN,
     LOGGING_PATH,
     THROTTLING,
@@ -11,6 +12,7 @@ from .logger_config import configurate_logger
 
 __all__ = [
     "configurate_logger",
+    "DEBUG",
     "BOT_TOKEN",
     "LOGGING_PATH",
     "THROTTLING",
